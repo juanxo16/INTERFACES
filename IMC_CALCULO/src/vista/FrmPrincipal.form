@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+              <Component id="miBotonIMCAlta" min="-2" pref="119" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
+              <Component id="Calcular" min="-2" pref="120" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="miBotonIMCListar" min="-2" pref="139" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
+              <Component id="miBotonIMCExit" min="-2" pref="89" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane1" min="-2" pref="755" max="-2" attributes="0"/>
+                  <Component id="miEtiquetaTituloResultado" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="miEtiquetaTituloPrincipal" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="miEtiquetaTituloDatosImc" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="134" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="miEtiquetaTituloPeso" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="miEtiquetaTituloAltura" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="miEtiquetaTituloNombre" min="-2" max="-2" attributes="0"/>
+                                      <Component id="miEtiquetaTituloEdad" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="miCuadrodeTextoEdad" max="32767" attributes="0"/>
+                                      <Component id="miCuadrodeTextoNombre" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="miCuadrodeTextoPeso" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="miCuadrodeTextoAltura" alignment="0" max="32767" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="miEtiquetaAyudaPeso" min="-2" max="-2" attributes="0"/>
+                                              <Component id="miEtiquetaAyudaEdad" min="-2" max="-2" attributes="0"/>
+                                              <Component id="miEtiquetaNombre" alignment="0" min="-2" pref="128" max="-2" attributes="0"/>
+                                              <Component id="miEtiquetaAyudaAltura" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="-2" pref="265" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="miEtiquetaTituloDni" min="-2" pref="32" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="miEtiquetaAyudaDni" min="-2" pref="118" max="-2" attributes="0"/>
+                                      <Component id="miCuadrodeTextoDni" min="-2" pref="393" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace pref="21" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="miEtiquetaTituloDni" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="miCuadrodeTextoDni" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="miEtiquetaTituloPrincipal" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="miEtiquetaAyudaDni" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="miCuadrodeTextoNombre" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="miEtiquetaTituloNombre" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="miEtiquetaNombre" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="miCuadrodeTextoEdad" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="miEtiquetaTituloEdad" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="miEtiquetaAyudaEdad" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="miEtiquetaTituloPeso" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="miCuadrodeTextoPeso" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="miEtiquetaTituloDatosImc" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="miEtiquetaAyudaPeso" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="miEtiquetaTituloAltura" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="miCuadrodeTextoAltura" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="miEtiquetaAyudaAltura" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+              <Component id="miEtiquetaTituloResultado" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="140" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="miBotonIMCAlta" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="Calcular" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="miBotonIMCListar" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="miBotonIMCExit" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="18" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="components.MiEtiquetaTitulo" name="miEtiquetaTituloDni">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="DNI:"/>
+      </Properties>
+    </Component>
+    <Component class="components.MiCuadrodeTextoFrm" name="miCuadrodeTextoDni">
+    </Component>
+    <Component class="components.MiEtiquetaAyuda" name="miEtiquetaAyudaDni">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="DNI o NIE"/>
+      </Properties>
+    </Component>
+    <Component class="components.MiEtiquetaTitulo" name="miEtiquetaTituloNombre">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="NOMBRE:"/>
+      </Properties>
+    </Component>
+    <Component class="components.MiCuadrodeTextoFrm" name="miCuadrodeTextoNombre">
+    </Component>
+    <Component class="components.MiEtiquetaAyuda" name="miEtiquetaNombre">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nombre y Apellidos"/>
+      </Properties>
+    </Component>
+    <Component class="components.MiEtiquetaTitulo" name="miEtiquetaTituloEdad">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="EDAD:"/>
+      </Properties>
+    </Component>
+    <Component class="components.MiCuadrodeTextoFrm" name="miCuadrodeTextoEdad">
+    </Component>
+    <Component class="components.MiEtiquetaAyuda" name="miEtiquetaAyudaEdad">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Edad"/>
+      </Properties>
+    </Component>
+    <Component class="components.MiEtiquetaTitulo" name="miEtiquetaTituloDatosImc">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="DATOS IMC:"/>
+      </Properties>
+    </Component>
+    <Component class="components.MiEtiquetaTitulo" name="miEtiquetaTituloPeso">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="PESO:"/>
+      </Properties>
+    </Component>
+    <Component class="components.MiCuadrodeTextoFrm" name="miCuadrodeTextoPeso">
+    </Component>
+    <Component class="components.MiEtiquetaAyuda" name="miEtiquetaAyudaPeso">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Peso en Kg"/>
+      </Properties>
+    </Component>
+    <Component class="components.MiEtiquetaTitulo" name="miEtiquetaTituloPrincipal">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="DATOS PERSONALES:"/>
+      </Properties>
+    </Component>
+    <Component class="components.MiEtiquetaTitulo" name="miEtiquetaTituloAltura">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="ALTURA:"/>
+      </Properties>
+    </Component>
+    <Component class="components.MiCuadrodeTextoFrm" name="miCuadrodeTextoAltura">
+    </Component>
+    <Component class="components.MiEtiquetaAyuda" name="miEtiquetaAyudaAltura">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Altura en cm"/>
+      </Properties>
+    </Component>
+    <Component class="components.MiEtiquetaTitulo" name="miEtiquetaTituloResultado">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="RESULTADO:"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextArea1">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                <BevelBorder bevelType="1"/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="components.MiBotonIMC" name="miBotonIMCAlta">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Alta usuario"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miBotonIMCAltaActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="components.MiBotonIMC" name="Calcular">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Calcular IMC"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CalcularActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="components.MiBotonIMC" name="miBotonIMCListar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Listar personas"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miBotonIMCListarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="components.MiBotonIMC" name="miBotonIMCExit">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Salir"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miBotonIMCExitActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
