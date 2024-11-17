@@ -5,7 +5,11 @@
 package vista;
 
 import controlador.Logica;
+import javax.swing.JOptionPane;
 import modelo.Persona;
+import utiles.ValidarDni;
+import utiles.ValidarNombre;
+import utiles.ValidarNumerico;
 
 /**
  *
@@ -13,11 +17,15 @@ import modelo.Persona;
  */
 public class FrmPrincipal extends javax.swing.JFrame {
 
+    Logica l = new Logica();
+
     /**
      * Creates new form FrmPrincipal
      */
     public FrmPrincipal() {
+
         initComponents();
+
     }
 
     /**
@@ -48,7 +56,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
         miEtiquetaAyudaAltura = new components.MiEtiquetaAyuda();
         miEtiquetaTituloResultado = new components.MiEtiquetaTitulo();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        textResultado = new javax.swing.JTextArea();
         miBotonIMCAlta = new components.MiBotonIMC();
         Calcular = new components.MiBotonIMC();
         miBotonIMCListar = new components.MiBotonIMC();
@@ -82,10 +90,10 @@ public class FrmPrincipal extends javax.swing.JFrame {
 
         miEtiquetaTituloResultado.setText("RESULTADO:");
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jTextArea1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
-        jScrollPane1.setViewportView(jTextArea1);
+        textResultado.setColumns(20);
+        textResultado.setRows(5);
+        textResultado.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        jScrollPane1.setViewportView(textResultado);
 
         miBotonIMCAlta.setText("Alta usuario");
         miBotonIMCAlta.addActionListener(new java.awt.event.ActionListener() {
@@ -226,22 +234,74 @@ public class FrmPrincipal extends javax.swing.JFrame {
     private void miBotonIMCAltaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miBotonIMCAltaActionPerformed
         // TODO add your handling code here:
         Persona p = new Persona();
-         p.setDni(miCuadrodeTextoDni.getText());
-         p.setNombre(miCuadrodeTextoNombre.getText());
-         p.setEdad(Integer.parseInt(miCuadrodeTextoEdad.getText()));
-         p.setPeso(Double.parseDouble(miCuadrodeTextoPeso.getText()));
-         p.setTalla(Double.parseDouble(miCuadrodeTextoAltura.getText()));
-         
-         Logica l = new Logica();
-         l.listarPersonas(p);
+        boolean nombrev = false;
+        boolean dniv = false;
+        boolean edadv = false;
+        boolean pesov = false;
+        boolean alturav = false;
+
+        // Validar nombre (no vacío y solo letras)
+        if (valNombre(miCuadrodeTextoNombre.getText().trim()) == true) {
+            p.setNombre(miCuadrodeTextoNombre.getText().trim());
+            nombrev = true;
+        } else {
+            JOptionPane.showMessageDialog(null, "Nombre invalido");
+        }
+
+        // Validar DNI (no vacío y formato de 8 dígitos)
+        if (valDni(miCuadrodeTextoDni.getText().trim()) == true) {
+            p.setDni(miCuadrodeTextoDni.getText().trim());
+            dniv = true;
+        } else {
+            JOptionPane.showMessageDialog(null, "DNI invalido");
+        }
+
+        // Validación de Edad (solo que sea un entero)
+        if (valNumerico(miCuadrodeTextoEdad.getText()) == true) {
+            p.setEdad(Integer.parseInt(miCuadrodeTextoEdad.getText()));
+            edadv = true;
+        } else {
+            JOptionPane.showMessageDialog(null, "Edad incorrecta");
+        }
+
+        // Validación de Peso (solo que sea un número de tipo double)
+        if (valNumerico(miCuadrodeTextoPeso.getText()) == true) {
+            p.setPeso(Double.parseDouble(miCuadrodeTextoPeso.getText()));
+            pesov = true;
+        } else {
+            JOptionPane.showMessageDialog(null, "Peso invalido");
+        }
+
+        // Validación de Altura (solo que sea un número de tipo double)
+        if (valNumerico(miCuadrodeTextoAltura.getText()) == true) {
+            p.setTalla(Double.parseDouble(miCuadrodeTextoAltura.getText()));
+            alturav = true;
+        } else {
+            JOptionPane.showMessageDialog(null, "Altura Inválida");
+        }
+
+        // Si todas las validaciones son correctas, calcular el IMC y añadir la persona al array
+        if (nombrev == true && dniv == true && edadv == true && pesov == true && alturav == true) {
+            l.calcularImc(p);
+            l.altaPersonas(p);
+
+            textResultado.setText("Persona agregada correctamente.");
+        }else{
+             textResultado.setText("Persona no agregada.");
+        }
+
+
     }//GEN-LAST:event_miBotonIMCAltaActionPerformed
 
     private void CalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CalcularActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here:       
+        textResultado.setText(l.calcularMediaImc());
+
     }//GEN-LAST:event_CalcularActionPerformed
 
     private void miBotonIMCListarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miBotonIMCListarActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here:      
+        textResultado.setText(l.listarPersonas());
     }//GEN-LAST:event_miBotonIMCListarActionPerformed
 
     private void miBotonIMCExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miBotonIMCExitActionPerformed
@@ -284,10 +344,38 @@ public class FrmPrincipal extends javax.swing.JFrame {
         });
     }
 
+    public boolean valNombre(String cadena) {
+
+        ValidarNombre vnombre = new ValidarNombre();
+        if (vnombre.validarNombre(cadena) == true) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public boolean valDni(String cadena) {
+        ValidarDni vdni = new ValidarDni();
+        if (vdni.validarDni(cadena) == true) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public boolean valNumerico(String cadena) {
+        ValidarNumerico vn = new ValidarNumerico();
+        if (vn.validarNumerico(cadena) == true) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private components.MiBotonIMC Calcular;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
     private components.MiBotonIMC miBotonIMCAlta;
     private components.MiBotonIMC miBotonIMCExit;
     private components.MiBotonIMC miBotonIMCListar;
@@ -309,5 +397,6 @@ public class FrmPrincipal extends javax.swing.JFrame {
     private components.MiEtiquetaTitulo miEtiquetaTituloPeso;
     private components.MiEtiquetaTitulo miEtiquetaTituloPrincipal;
     private components.MiEtiquetaTitulo miEtiquetaTituloResultado;
+    private javax.swing.JTextArea textResultado;
     // End of variables declaration//GEN-END:variables
 }

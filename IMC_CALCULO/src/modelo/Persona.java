@@ -4,6 +4,8 @@
  */
 package modelo;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author juanj.hermon
@@ -17,6 +19,7 @@ public class Persona {
     private double peso;
     private double imc;
     private String imcMsj;
+    
 
     public Persona() {
     }
@@ -84,6 +87,11 @@ public class Persona {
 
     public void setImcMsj(String imcMsj) {
         this.imcMsj = imcMsj;
+    }
+
+    @Override
+    public String toString() {
+        return "Persona:" + "DNI = " + dni + ", Nombre = " + nombre + ", Edad = " + edad + ", Talla = " + talla + ", Peso = " + peso + ", IMC = " + imc+ ", Mensaje = " ;
     }
     
     
