@@ -1,0 +1,10 @@
+C:\Users\juanj.hermon\source\repos\EjercicioLoteria\EjercicioLoteria\bin\Debug\EjercicioLoteria.exe.config
+C:\Users\juanj.hermon\source\repos\EjercicioLoteria\EjercicioLoteria\bin\Debug\EjercicioLoteria.exe
+C:\Users\juanj.hermon\source\repos\EjercicioLoteria\EjercicioLoteria\bin\Debug\EjercicioLoteria.pdb
+C:\Users\juanj.hermon\source\repos\EjercicioLoteria\EjercicioLoteria\obj\Debug\EjercicioLoteria.csproj.AssemblyReference.cache
+C:\Users\juanj.hermon\source\repos\EjercicioLoteria\EjercicioLoteria\obj\Debug\EjercicioLoteria.Form1.resources
+C:\Users\juanj.hermon\source\repos\EjercicioLoteria\EjercicioLoteria\obj\Debug\EjercicioLoteria.Properties.Resources.resources
+C:\Users\juanj.hermon\source\repos\EjercicioLoteria\EjercicioLoteria\obj\Debug\EjercicioLoteria.csproj.GenerateResource.cache
+C:\Users\juanj.hermon\source\repos\EjercicioLoteria\EjercicioLoteria\obj\Debug\EjercicioLoteria.csproj.CoreCompileInputs.cache
+C:\Users\juanj.hermon\source\repos\EjercicioLoteria\EjercicioLoteria\obj\Debug\EjercicioLoteria.exe
+C:\Users\juanj.hermon\source\repos\EjercicioLoteria\EjercicioLoteria\obj\Debug\EjercicioLoteria.pdb
